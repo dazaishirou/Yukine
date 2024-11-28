@@ -1,0 +1,460 @@
+.he{
+  position:absolute;
+  left:350px;
+  bottom:0px;
+}
+
+.samurai{
+  position:absolute;6
+  bottom:0px;
+  height:900px;
+  left:300px; 
+ bottom:-370px;
+  z-index:20;
+}
+
+.hover:hover ~ .thunder{
+    opacity: 1;
+  transition: opacity 0.5s;
+  transition-delay: 0.3s;
+}
+.thunder {
+  position: absolute;
+  width: 0px;
+  height: 400px;
+  bottom:-500px;
+  right:00px;
+  left:-600px;
+  border: 560px solid transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  background-image: url(https://i.imgur.com/oY0law9.gif);
+  background-repeat: no-repeat;
+  z-index: 1;
+  transform: rotate(5deg);
+  filter: grayscale(%);
+  opacity:0;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transition-delay: 0.3s;
+}
+
+
+
+.box{
+  position:absolute;
+  border: solid 0px black;
+  width:1300px;
+  height:600px;
+  z-index:2;
+  left:20px;
+  bottom:100px;
+}
+
+/****
+Saint Seiya Evolution
+https://ssevolution.forumbrasil.net
+
+Layout por Akeido
+http://linktr.ee/Akeido
+***/
+
+:root {
+    --border: #1f1f1f;
+    --wrap: #111;
+    --color: #B8860B;
+    --fonte: 'Fugaz One', cursive;
+    --fonte2: 'Playfair Display', serif;
+    --background: url(https://i.imgur.com/GX3gZFm.gif);
+ 
+    --shadow: 0px 0px 20px #00000057;
+}
+    
+body {
+    display: block;
+    color: #ababab;
+    background-color: #666;
+    background-image: var(--background);
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: bottom;
+    font-size: 12px;
+    height: auto!important;
+    cursor: url(https://i.imgur.com/CtTcZuL.png), url(https://i.imgur.com/CtTcZuL.png), auto;
+  overflow-x: hidden;
+ font-size: 12px;
+ font-family: inter;
+}
+
+a {text-decoration: none;  color: white;}
+
+@media screen and (orientation: portrait) {
+    body {
+        width:250%!important;
+        display: block!important; min-height: auto!important;
+        overflow-x: hidden;
+    }
+}
+
+#page-footer {
+    background-color: transparent;
+    margin-bottom: 15px;
+
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: #222;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color);
+    border-radius: 3px;
+    border: 1px solid #222;
+}
+
+::selection {background-color: var(--color); color: black;}
+
+/****base***/
+#wrap {
+    background-color: var(--wrap);
+    border: 4px solid var(--color);
+    font-size: 13px;
+    margin: 0px auto 80px;
+    border-radius: 20px;
+    padding: 0px 0px ! Important;
+    box-shadow: 0px 0px 20px #00000057;
+    max-width: 1260px;
+    padding: 25px;
+    width: 100%;
+    color: #FFF;
+    position: relative;
+}
+
+#wrap:before {
+    display: block;
+    height: 300px;
+    width: 1260px;
+    border-radius: 100% 100% 0% 0%;
+    background-color: var(--wrap);
+    content: "";
+    margin-top: -150px;
+    border: 1px solid var(--color);
+    border-bottom: 0px;
+    margin-left: -1px;
+}
+
+#main {
+    margin: 30px 30px;
+}
+
+#content-container #container {
+    margin-left: 0px;
+    margin-right: 0;
+}
+
+#page-body {
+    width: 100%;
+    margin-top: -200px;
+}
+
+/***topo***/
+section.header {
+    padding: 0 0 0px;
+    height: 950px!important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    filter: grayscale(0);
+    margin-top: -20px;
+}
+
+section.header:before {
+    content: "";
+    background: var(--saori);
+    background-size: 1120px;
+    position: absolute;
+    width: 1100px;
+    height: 1200px;
+    background-repeat: no-repeat;
+    transform: rotate(-10deg);
+    margin-top: 100px;
+    margin-left: -450px;
+    filter: saturate(1.1) brightness(90%) contrast(110%) drop-shadow(0px 0px 10px #111);
+}
+
+.tituloheader {
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 750%;
+    font-family: var(--fonte);
+    margin-top: -00px;
+    width: 700px;
+    margin-left: 500px;
+}
+
+saint {
+    display: block;
+    font-size: 95px;
+    letter-spacing: -5px;
+    margin-right: -7.5px;
+}
+
+evolution {
+    font-size: 120px;
+    letter-spacing: -5px;
+    text-align: right;
+}
+
+sub {
+    font-family: trebuchet ms;
+    line-height: 140%;
+    text-transform: none;
+    font-size: 15px;
+    text-align: right;
+    margin-top: 0px;
+    display: block;
+    color: gold;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.textheader {
+    font-family: inter;
+    line-height: 130%;
+    text-transform: none;
+    font-size: 15px;
+    width: 450px;
+    text-align: left;
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: 250px;
+    overflow: hidden;
+    height: 350px;
+}
+
+.textheader .shape {
+    shape-outside: ellipse(60px 130px);
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin-left: -80px;
+    margin-top: 260px;
+}
+
+
+/***template de anuncios***/
+.linetemplate {
+    z-index: 5;
+    height: 444px;
+    padding: 0px 0px;
+    position: relative;
+    border: 3px solid var(--border);
+    margin: -150px 30px 30px;
+    background-color: #151515;
+    display: ;
+    border-radius: 15px;
+}
+
+.render {
+    height: 570px;
+    width: 500px;
+    position: absolute;
+    background-image: url(https://i.imgur.com/Di622cU.png);
+    background-position: center 0px;
+    background-size: 500px;
+    filter: grayscale(0) contrast(120%) brightness(80%);
+    margin-left: -200px;
+    transform: scaleX(-1);
+    pointer-events: none;
+    margin-top: -35px;
+    z-index: 9;
+    background-repeat: no-repeat;
+}
+
+/**widgets**/
+ #left {
+    float: none;
+    padding: 0px 0px 25px;
+    margin-none: 30px;
+    display: block;
+    margin-top: 5px;
+    align-items: start;
+    margin: -470px 200px 0px;
+    width: 320px;
+    height: 365px;
+    z-index: 8;
+    position: absolute!important;
+    border-radius: 20px;
+    border: 3px solid var(--border);
+    overflow: hidden;
+  font-family: inter;
+  font-size: 12px!important;
+  background-color: #181818;
+  
+}
+
+/***mensagens recentes***/
+.module {
+    background-color: #181818;
+    color: #fff;
+    margin-bottom: 0px !important;
+    padding: 20px 15px;
+    font-size: 13px;
+    width: 280px;
+    height: 200px;
+ margin: 15px;
+}
+
+.module .h3 {background-color: var(--color); color: black; font-weight: 900; padding: 15px 25px;
+margin: -35px -35px 20px;}
+
+.mod-recent-info {
+    margin-bottom: 10px;
+    clear: both;
+    display: block;
+    border-bottom: 3px solid #333 !important;
+    padding-bottom: 10px;
+}
+
+.mod-recent-info strong {display: block;}
+
+.mod-recent-row {
+    padding: 10px;
+    overflow: auto;
+    height: 300px;
+}
+
+#content-container #left .mod-recent-author {
+    margin-left: 0px;
+}
+
+#content-container #left a {
+    color: #262740!important;
+}
+
+#comments_scroll_div > .marquee {
+    width: 300px!important;
+    margin-top: 35px;
+    height: 270px!important;
+    margin-left: 0px;
+}
+
+#content-container #left .mod-recent-title {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: -5px;
+    color: #FFF!IMPORTANT;
+}
+
+#content-container #left .mod-recent-author {
+    margin-left: 0px;
+    display: block;
+}
+
+.anuncios {
+    position: absolute;
+    width: 270px;
+    height: 389px;
+    margin-left: 520px;
+    margin-top: 30px;
+    background-image: url(https://i.imgur.com/XF71mqi.png);
+}
+
+/***trama***/
+.trama {
+    background: #555;
+    width: 379px;
+    height: 444px;
+    margin-left: 812px;
+    display: inline-block;
+    background-image: var(--background);
+    background-blend-mode: multiply;
+    background-color: var(--color);
+    border-left: 3px solid var(--border);
+    border-radius: 0px 15px 15px 0px;
+}
+
+.trama-titulo {
+    font-size: 45px;
+    line-height: 80%;
+    font-weight: 400;
+    color: var(--lightcolor);
+    font-family: var(--fonte);
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 300px;
+    float: right;
+}
+
+.trama-ano {
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: var(--title);
+    margin-bottom: 10px;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 0px;
+    width: 100%;
+    float: right;
+}
+
+.trama-texto {
+    text-align: justify;
+    width: 310px;
+    font-size: 13px;
+    line-height: 140%;
+    margin-left: 100px;
+    float: right;
+    margin-right: 30px;
+ font-family: inter;
+}
+
+/*----- 【 MUSIC PLAYER #08 by @glenthemes 】 -----*/
+[glenplayer08]{
+	
+	/*-- player position --*/
+	--MusicPlayer-Position: "bottom left";
+	--MusicPlayer-Corner-Offset: 50px;
+	
+	/*-- album image --*/
+	--MusicPlayer-Album-Image-Size: 54px;
+	--MusicPlayer-Album-Image-Corner-Roundness: 3px;
+	
+	/*-- player buttons (play/pause) --*/
+	--MusicPlayer-Buttons-Size: 31px;
+	--MusicPlayer-Buttons-Color: #ddd;
+	--MusicPlayer-Buttons-Padding: 8px;
+	--MusicPlayer-Buttons-Border-Size: 1px;
+	--MusicPlayer-Buttons-Border-Color: #bbb;
+	--MusicPlayer-Buttons-Background: #000000;
+	--MusicPlayer-Buttons-Background-Transparency: 45%;
+	--MusicPlayer-Buttons-Background-Blur: 3px;
+	
+	/*-- player song name --*/
+	--MusicPlayer-Song-Name-Size: 12px;
+	--MusicPlayer-Song-Name-Color: #222;
+	
+	/*-- player artist name --*/
+	--MusicPlayer-Artist-Name-Size: 12px;
+	--MusicPlayer-Artist-Name-Color: #777;
+	
+	/*-- player gap/spacing --*/
+	--MusicPlayer-Center-Gap: 14px;
+	--MusicPlayer-Text-Line-Spacing: 4px;
+	
+	/*-- playback settings --*/
+	--MusicPlayer-Autoplay: "no";
+	--MusicPlayer-Replay: "no";
+	
+}/* don't delete this line */
+/*---- END MUSIC PLAYER ----*/
